@@ -1,0 +1,9 @@
+<ul>
+    <% @users.each do |user| %>
+        <!-- users에 모든 것이 들어있는데, 거기서 한줄씩 통째로 담김. -->
+    <!--<li><%= user %></li>-->
+        <li><%= user.id %> / <%= user.user_name %> / <%= user.password %></li>
+        <br>
+    <% end %>
+</ul>
+<a href="/users/new">새회원 등록</a>
